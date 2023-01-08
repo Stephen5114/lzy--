@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .active{
+            background-color: red;
+        }
+        ul{
+            text-align: center;
+            width: 1200px;
+            margin: auto;
+        }
+        li{
+            list-style: none;
+            width: 120px;
+            height: 50px;
+            color: white;
+            line-height: 50px;
+        }
+        .first>li{
+            float: left;
+            margin-right: 50px;
+        }
+        .second>li{
+            background-color: green;
+        }
+        .wrap{
+            background-color: #2b2b2b;
+        }
+        .second{display: none;}
+        .first>li:hover{
+            background-color: red;
+        }
+        .second>li:hover{
+            background-color: purple;
+        }
+        .first>li:hover .second{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <ul class="first">
+            <li class="active">
+                <p>首页</p>
+                <ul class="second">
+                    <li>首页的二级</li>
+                    <li>首页的二级</li>
+                    <li>首页的二级</li>
+                    <li>首页的二级</li>
+                </ul>
+            </li>
+            <li>服务范围</li>
+            <li>工程案例</li>
+            <li>新闻动态</li>
+            <li>关于我们</li>
+            <div style="clear: both;"></div>
+        </ul>
+    </div>
+</body>
+</html>
